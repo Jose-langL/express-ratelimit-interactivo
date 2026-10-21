@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "NODE_ENV-test node"
   },
   "keywords": [],
   "author": "Jose-langL",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1"
+  }
 }
